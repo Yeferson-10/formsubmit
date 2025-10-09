@@ -309,3 +309,23 @@ button:active {
   }
 }
 
+div h3{
+    text-align: center;
+}
+.seccion_gracias {
+    width: 80%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_gracias {
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+}
+
+.img{
+    width: 40%;
+    height: 40%;
+}
