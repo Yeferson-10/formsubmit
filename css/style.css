@@ -238,7 +238,7 @@ button:active {
 .card {
   width: fit-content;
   height: fit-content;
-  background-color: rgb(238, 238, 238);
+    background-color: #cde8e5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -328,4 +328,51 @@ div h3{
 .img{
     width: 40%;
     height: 40%;
+}
+
+/* Estilos generales del menú */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Responsive para pantallas <= 480px */
+@media (max-width: 480px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #7ab2b2;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #4d869c;
+  }
 }
